@@ -32,6 +32,8 @@ const WhyChooseSection = () => {
         background: "linear-gradient(to right, #ec4899, #8b5cf6)",
         overflow: "hidden",
       }}
+      id = "choose"
+
     >
       <Container>
         <Row>
@@ -69,7 +71,7 @@ const WhyChooseSection = () => {
                 className="badge bg-white text-dark fw-bold mb-3 px-3 py-2 align-self-start"
                 style={{ fontSize: "2.5rem" }}
               >
-                WHY WE CHOOSE
+                WHY CHOOSE US
               </span>
               <h2 className="fw-bold mt-4 mb-2" style={{ lineHeight: '1.3' }}>
                 Why Choose Tech Pro!

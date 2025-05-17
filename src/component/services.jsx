@@ -47,7 +47,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="services-section py-5 bg-light">
+    <div className="services-section py-5 bg-light"id="services">
       <div className="container">
         <div className="row align-items-center">
           {/* Left side */}

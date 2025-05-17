@@ -4,42 +4,47 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './projects.css';
-import web from '../assets/web.json';
-import app from '../assets/app.json';
-import homepagescreenshot from '../assets/homepagescreenshot.png';
+
+import Article_Writer from '../assets/Article_Writer.png';
+import forecasting from '../assets/forecasting.png';
+import PillTracker from '../assets/PillTracker.png';
+import seo from '../assets/seo.avif';
+import crm from '../assets/crm.png';
+import ecommerce from '../assets/ecommerce.jpeg';
+// import AppImage from '../assets/app.png'; // Replace your JSON Lottie with image
+// import HomePageScreenshot from '../assets/homepagescreenshot.png';
 import { ArrowLeftCircle, ArrowRightCircle } from 'lucide-react';
 
 const projects = [
   {
     title: 'E-commerce Platform',
     desc: 'Developed a fully-featured online store with cart, payment, and admin dashboard.',
-    icon: web,
+    icon: ecommerce,
   },
   {
     title: 'Online Health Care Application',
     desc: 'Built a cross-platform app for tracking health metrics using React Native and Firebase.',
-    icon: app,
+    icon: PillTracker,
   },
   {
     title: 'AI Chatbot Integration',
     desc: 'Implemented a GPT-powered chatbot for FAQs and live support.',
-    icon: web,
+    icon: Article_Writer,
   },
   {
     title: 'Machine Learning for Sales Forecasting',
     desc: 'Built predictive model using Random Forest and XGBoost to forecast monthly sales.',
-    icon: homepagescreenshot
-    ,
+    icon: forecasting,
   },
   {
     title: 'Custom CRM System',
     desc: 'Developed a CRM web app with lead management, analytics, and user roles for a real estate company.',
-    icon: web,
+    icon: crm,
   },
   {
     title: 'SEO Analytics Dashboard',
     desc: 'Built dashboard for tracking SEO performance, keyword rankings, and site traffic.',
-    icon: web,
+    icon:seo,
   },
 ];
 
@@ -75,14 +80,17 @@ const Projects = () => {
                 <SwiperSlide key={index}>
                   <div className="card service-card text-center p-4 shadow-sm h-100">
                     <div className="mb-3">
-                      <lottie-player
+                      <img
                         src={project.icon}
-                        background="transparent"
-                        speed="1"
-                        style={{ width: '100px', height: '100px', margin: '0 auto' }}
-                        loop
-                        autoplay
-                      ></lottie-player>
+                        alt={project.title}
+                        style={{
+                          width: '100px',
+                          height: '100px',
+                          objectFit: 'cover',
+                          borderRadius: '0.75rem',
+                          margin: '0 auto',
+                        }}
+                      />
                     </div>
                     <h5 className="fw-bold">{project.title}</h5>
                     <p className="text-muted">{project.desc}</p>

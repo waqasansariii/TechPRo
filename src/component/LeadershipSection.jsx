@@ -1,12 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Card, Image } from "react-bootstrap";
 // import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import bilal from "../assets/bilal.jpg";
+import jamshaid from '../assets/jamshaid.jpg';
 const leaders = [
   {
     name: "Muhammad Bilal",
     title: "AI Developer & Data Scientist",
-    image: "https://i.ibb.co/xmHBD8m/leader1.jpg",
+    image: bilal,
     // socials: {
     //   facebook: "#",
     //   twitter: "#",
@@ -16,7 +17,7 @@ const leaders = [
   {
     name: "Muhammad Jamshed",
     title: "Full Stack Developer",
-    image: "https://i.ibb.co/JRHQSpD/leader2.jpg",
+    image: jamshaid,
     // socials: {
     //   facebook: "#",
     //   twitter: "#",

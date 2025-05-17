@@ -53,9 +53,14 @@
     transition: color 0.3s;
   }
   
+  .hovertext:hover {
+    color: #3498db;
+  }
   .footer-links a:hover {
     color: #3498db;
   }
+ 
+  
   
   .footer-contact {
     list-style: none;
